@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+
+
+
+<html dir="rtl" lang="fa">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="theme-color" content="#FF636C"/>
+<meta name="robots" content="noindex,follow"/>
+<meta name="description" content="ورود و ساخت حساب کاربری در فروشگاه اینترنتی wallBoard."/><meta content="website" property="og:type"/><meta content="ورود به حساب | wallBoard" property="og:title"/><meta property="og:description" content="ورود و ساخت حساب کاربری در فروشگاه اینترنتی wallBoard."/>
+<meta property="og:locale" content="fa_IR"/>
+<meta property="og:image" content="/images/logo.svg"/>
+<meta name="twitter:image" content="/images/logo.svg"/>
+<meta name="twitter:card" content="summary"/>
+<title>
+   ورود به حساب | wallBoard
+  </title>
+<link href="/images/logo.svg" rel="icon" type="image/svg+xml"/>
+<link href="/src/styles/tokens.css" rel="stylesheet"/>
+<link href="/src/styles/auth.css" rel="stylesheet"/>
+<link href="/src/styles/refinement.css" rel="stylesheet"/>
+<link href="/src/styles/responsive-polish.css" rel="stylesheet"/>
+<link href="/src/styles/mobile-experience.css" rel="stylesheet"/>
+<script src="/src/pages/auth.js" type="module">
+</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&amp;family=Caveat:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="/site.webmanifest" rel="manifest"/>
+</head>
+<body>
+<div class="top-strip">
+<span>
+    ✦
+   </span>
+<span>
+    یه جای مخصوص برای ایده‌های تو · wallBoard
+   </span>
+<span>
+    ✦
+   </span>
+</div>
+<header class="login-header">
+<a aria-label="بازگشت به صفحه اصلی wallBoard" class="brand" href="index.html">
+<img alt="" decoding="async" height="49" src="/images/logo.svg" width="49"/>
+<span>
+     wall
+     <span class="brand-light">
+      Board
+     </span>
+</span>
+</a>
+<a class="home-link" href="index.html">
+    بازگشت به فروشگاه
+    <span aria-hidden="true">
+     ↗
+    </span>
+</a>
+</header>
+<main class="login-layout">
+<section aria-label="معرفی wallBoard" class="art-side">
+<span class="art-eyebrow">
+     YOUR SPACE, YOUR RULES
+     <span>
+      ✳
+     </span>
+</span>
+<h1>
+     یه فضای مرتب،
+     <br/>
+<em>
+      یه حال خوب!
+     </em>
+</h1>
+<p>
+     همه‌چیز از همین‌جا شروع می‌شه. به جمع آدم‌هایی بیا که دوست دارن فضای خودشون رو، به سبک خودشون بچینن.
+    </p>
+<div aria-hidden="true" class="drawing">
+<div class="doodle-star star-one">
+      ✳
+     </div>
+<div class="doodle-star star-two">
+      ✦
+     </div>
+<div class="draw-board">
+<div class="board-holes">
+</div>
+<div class="board-shelf shelf-top">
+</div>
+<div class="board-shelf shelf-bottom">
+</div>
+<div class="draw-note">
+       MAKE
+       <br/>
+       IT
+       <br/>
+       YOURS!
+      </div>
+<div class="draw-cup">
+</div>
+<div class="draw-hook">
+</div>
+</div>
+<div class="draw-sticker">
+      100%
+      <br/>
+      YOU!
+     </div>
+<span class="draw-caption">
+      * تصویر مفهومی، نه محصول واقعی
+     </span>
+</div>
+<div class="art-bottom">
+<span>
+      ✷
+     </span>
+     نظم با شخصیت
+     <span>
+      ✷
+     </span>
+</div>
+</section>
+<section aria-labelledby="formTitle" class="form-side">
+<div class="auth-card">
+<div class="pill">
+      ✦ HELLO AGAIN!
+     </div>
+<h2 id="formTitle">
+      خوش اومدی
+      <span>
+       رفیق!
+      </span>
+</h2>
+<p class="intro" id="formDescription">
+      وارد حسابت شو تا ماجراجویی wallBoard رو ادامه بدیم.
+     </p>
+<div aria-label="نوع حساب" class="tabs" role="tablist">
+<button aria-controls="loginForm" aria-selected="true" class="tab active" id="loginTab" role="tab" type="button">
+       ورود به حساب
+      </button>
+<button aria-controls="loginForm" aria-selected="false" class="tab" id="registerTab" role="tab" type="button">
+       ثبت‌نام
+      </button>
+</div>
+<form id="loginForm" novalidate="">
+<div class="field hidden" id="nameField">
+<label for="fullName">
+        نام و نام خانوادگی
+       </label>
+<input autocomplete="name" id="fullName" name="fullName" placeholder="مثلاً: علی رضایی" type="text"/>
+<small class="error" id="nameError">
+</small>
+</div>
+<div class="field">
+<label for="email">
+        ایمیل
+       </label>
+<div class="input-wrap">
+<input autocomplete="email" dir="ltr" id="email" inputmode="email" name="email" placeholder="you@example.com" required="" type="email"/>
+<span aria-hidden="true" class="input-icon">
+         ✉
+        </span>
+</div>
+<small class="error" id="emailError">
+</small>
+</div>
+<div class="field">
+<div class="label-row">
+<label for="password">
+         رمز عبور
+        </label>
+<button class="text-link" id="forgotPassword" type="button">
+         فراموش کردی؟
+        </button>
+</div>
+<div class="input-wrap">
+<input autocomplete="current-password" dir="ltr" id="password" minlength="8" name="password" placeholder="حداقل ۸ کاراکتر" required="" type="password"/>
+<button aria-label="نمایش رمز عبور" aria-pressed="false" class="eye-btn" id="togglePassword" type="button">
+         نمایش
+        </button>
+</div>
+<small class="error" id="passwordError">
+</small>
+</div>
+<div class="options">
+<label class="remember">
+<input checked="" id="rememberMe" type="checkbox"/>
+<span>
+         ایمیلم رو یادآوری کن
+        </span>
+</label>
+<span class="secure-note">
+        ✳ نسخه نمایشی
+       </span>
+</div>
+<button class="submit-btn" id="submitBtn" type="submit">
+       ورود به حساب
+       <span aria-hidden="true">
+        ←
+       </span>
+</button>
+<p aria-live="polite" class="feedback" id="formFeedback" role="status">
+</p>
+</form>
+<div class="auth-footer">
+<span>
+       حساب نداری؟
+      </span>
+<button class="switch-auth" id="switchAuth" type="button">
+       همین حالا ثبت‌نام کن ↗
+      </button>
+</div>
+<div class="demo-note">
+      این صفحه فعلاً نمایشی است؛ حساب واقعی ایجاد نمی‌شود و رمز عبور به سروری ارسال یا ذخیره نمی‌شود.
+     </div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<span>
+    © 2026 wallBoard
+   </span>
+<span>
+    MADE TO ORGANIZE. MADE TO PLAY. ✳
+   </span>
+</footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+/*
+ * wallBoard design tokens
+ * One source of truth for brand color, typography, surfaces and layout scale.
+ */
+:root {
+  color-scheme: light;
+
+  /* Brand palette */
+  --red: #FF636C;
+  --red-dark: #E34F59;
+  --red-text: #B83A42;
+  --red-soft: #FFE4E5;
+  --red-tint: #FFF0EF;
+  --cream: #F5EBDD;
+  --paper: #FAF6EF;
+  --ink: #2D2927;
+  --muted: #6D625C;
+  --yellow: #EBD075;
+  --blue: #86BABB;
+  --sand: #E8D8C2;
+
+  /* Component foundations */
+  --border: 3px solid var(--ink);
+  --line: #282828;
+  --shadow: 5px 5px 0 var(--ink);
+  --shadow-soft: 3px 4px 0 var(--ink);
+
+  /* Layout */
+  --max: 1220px;
+  --content-max: 1160px;
+  --page-gutter: clamp(16px, 3.2vw, 42px);
+
+  /* Typography */
+  --font-fa: 'Vazirmatn', Tahoma, sans-serif;
+  --font-latin: 'Caveat', cursive;
+  --display-fa: var(--font-fa);
+  --ui-fa: var(--font-fa);
+  --text-regular: 400;
+  --text-medium: 500;
+  --text-semibold: 600;
+  --text-bold: 700;
+}
+
+html {
+  color-scheme: light;
+  scroll-padding-top: 88px;
+}
+
+body {
+  font-family: var(--font-fa);
+  font-weight: var(--text-regular);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-fa);
+}
+
+:focus-visible {
+  outline: 3px solid #315D75;
+  outline-offset: 3px;
+}
+
+::selection {
+  color: var(--ink);
+  background: var(--red-soft);
+}

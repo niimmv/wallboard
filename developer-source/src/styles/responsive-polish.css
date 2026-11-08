@@ -1,0 +1,190 @@
+/*
+ * wallBoard responsive polish
+ * Final touch-target, image-ratio and viewport rules shared by every storefront page.
+ */
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--page-gutter);
+}
+
+.site-header {
+  min-width: 0;
+}
+
+.brand,
+.header-actions,
+.product-card,
+.product-card__details,
+.product-actions {
+  min-width: 0;
+}
+
+.button,
+.outline-button,
+.mini-add,
+.icon-button,
+.cart-button,
+.menu-button,
+.favorite-toggle,
+.heart-button {
+  min-height: 44px;
+}
+
+.mini-add {
+  min-width: 44px;
+}
+
+.mobile-nav {
+  max-height: calc(100dvh - 118px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.product-art--photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-card h3,
+.product-card__price {
+  overflow-wrap: anywhere;
+}
+
+.hero-carousel__arrow {
+  min-width: 42px;
+  min-height: 42px;
+}
+
+.hero-carousel__pause {
+  min-width: 40px;
+  min-height: 40px;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .hero-carousel {
+    width: min(100%, 1140px);
+  }
+}
+
+@media (max-width: 980px) {
+  .site-header {
+    height: 80px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-button {
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --page-gutter: 15px;
+  }
+
+  .site-header {
+    height: 72px;
+    padding-inline: 14px;
+    gap: 10px;
+  }
+
+  .brand {
+    font-size: 27px;
+  }
+
+  .header-actions {
+    gap: 7px;
+  }
+
+  .mobile-nav {
+    top: 104px;
+    right: 12px;
+    left: 12px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 13px;
+  }
+
+  .product-card h3 {
+    font-size: clamp(13px, 3.4vw, 15px);
+    line-height: 1.7;
+  }
+
+  .product-card__price {
+    font-size: clamp(11px, 2.9vw, 13px);
+  }
+
+  .product-actions {
+    gap: 8px;
+  }
+
+  .product-actions .outline-button {
+    padding-inline: 7px;
+    font-size: 10px;
+  }
+
+  .product-actions .mini-add {
+    flex: 0 0 44px;
+    width: 44px;
+  }
+
+  .detail-layout,
+  .about-grid,
+  .contact-layout,
+  .checkout-layout,
+  .cart-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 380px) {
+  .product-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .product-art {
+    height: 270px;
+  }
+
+  .brand {
+    font-size: 24px;
+  }
+
+  .cart-button {
+    padding-inline: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

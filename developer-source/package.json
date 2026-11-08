@@ -1,0 +1,27 @@
+{
+  "name": "wallboard-storefront",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "wallBoard storefront frontend; production administration is handled by Django Admin",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "lint": "eslint src tests",
+    "format": "prettier --write src tests *.html",
+    "format:check": "prettier --check src tests *.html",
+    "test": "vitest run tests/unit.test.js",
+    "test:e2e": "playwright test",
+    "check": "npm run lint && npm run test && npm run build && npm run budget",
+    "budget": "node scripts/check-budgets.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "eslint": "^9.39.0",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "vite": "^7.1.0",
+    "vitest": "^3.2.4"
+  }
+}
